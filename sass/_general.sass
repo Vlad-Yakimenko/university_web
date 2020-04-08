@@ -1,0 +1,145 @@
+*
+    box-sizing: border-box
+
+body
+    position: relative
+
+.wrapper_block
+    height: 1280px
+
+.first
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    background: url('../img/bokeh_2.jpg') center (center / cover) no-repeat
+    padding: 40px 15px
+    width: 42%
+    height: 70%
+    overflow: hidden
+    position: absolute
+
+    &_main
+        display: inline-block
+        width: 65%
+
+        +image
+
+        +article
+
+    &_feed
+        width: 30%
+        display: flex
+        justify-content: space-around
+        margin-right: 10px
+
+        .col-lg-6
+            padding: 0 5px 0 5px
+
+        &_item
+            display: inline-block
+            width: 100%
+            margin-bottom: 3px
+            overflow: hidden
+
+            img
+                display: block
+                width: 100%
+                height: 80%
+                border: 4px solid #ffffff
+
+            &_text
+                text-align: center
+                color: #ffffff
+                font-size: 10px
+
+.second
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    background: url('../img/bokeh_1.jpg') center (center / cover) no-repeat
+    padding: 40px 15px
+    width: 42%
+    height: 70%
+    position: absolute
+    overflow: hidden
+    left: 58%
+
+    &_main
+        display: inline-block
+        width: 65%
+
+        +image
+
+        +article
+
+    &_feed
+        width: 30%
+
+        &_item
+            width: 100%
+            height: 18%
+            margin-bottom: 12%
+            padding-right: 7px
+            
+            img
+                display: block
+                width: 100%
+                height: 80%
+                border: 4px solid #ffffff
+
+            &_text
+                text-align: center
+                color: #ffffff
+                font-size: 12px
+                padding: 0 7%
+                max-height: 30%
+                overflow: hidden
+
+.third
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    background: url('../img/bokeh_4.jpg') center (center / cover) no-repeat
+    padding: 40px 15px
+    width: 42%
+    height: 70%
+    position: absolute
+    overflow: hidden
+    left: 29%
+    top: 30%
+
+    &_main
+        display: inline-block
+        width: 65%
+
+        +image
+
+        +article
+
+        &_article
+            &_info
+                img
+                    border: 4px solid #14e954
+
+            &_tabs
+                background-image: linear-gradient(to bottom, #0281b3 0%, #003d66 100%)
+
+                button
+                    width: 28%
+                    height: 90%
+                    margin-left: 1%
+                    border: none
+                    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.12)
+                    background-image: linear-gradient(to bottom, #0da7e4 0%, #016097 100%)
+                    margin-top: 19px
+                    cursor: pointer
+                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+                    color: #ffffff
+                    font-size: 14px
+                    font-weight: 400
+                    text-transform: uppercase
+
+                    &:hover
+                        background-image: linear-gradient(to bottom, #0bd347 0%, #02a12a 100%)
+                        color: #ffffff
+                        border: 1px inset
